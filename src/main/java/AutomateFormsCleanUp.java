@@ -12,7 +12,7 @@ import static org.junit.Assert.assertEquals;
 public class AutomateFormsCleanUp {
     public static void main(String[] args) throws InterruptedException {
         //set location for chrome driver
-        System.setProperty("webdriver.chrome.driver","C:\\Users\\tkipkosgei\\Downloads\\chromedriver_win32\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\tkipkosgei\\Downloads\\chromedriver_win32\\chromedriver.exe");
 
         // create chrome driver instance
         WebDriver driver = new ChromeDriver();
@@ -23,7 +23,7 @@ public class AutomateFormsCleanUp {
         fillForm(driver);
         assertBannerAlert(driver);
 
-        assertEquals("The form was successfully submitted!",getAlertText(driver));
+        assertEquals("The form was successfully submitted!", getAlertText(driver));
 
         Thread.sleep(3000);
         driver.quit();
@@ -52,14 +52,14 @@ public class AutomateFormsCleanUp {
 
     }
 
-    public static void assertBannerAlert(WebDriver driver){
+    public static void assertBannerAlert(WebDriver driver) {
         // Junit test to compare output values
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(8));
         wait.until((ExpectedConditions.visibilityOfElementLocated(By.className("alert"))));
 
     }
 
-    public static String getAlertText(WebDriver driver){
+    public static String getAlertText(WebDriver driver) {
         return driver.findElement(By.className("alert")).getText();
     }
 }

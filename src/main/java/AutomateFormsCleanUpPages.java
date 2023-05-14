@@ -9,7 +9,7 @@ import static pages.FormPage.fillForm;
 public class AutomateFormsCleanUpPages {
     public static void main(String[] args) throws InterruptedException {
         //set location for chrome driver
-        System.setProperty("webdriver.chrome.driver","C:\\Users\\tkipkosgei\\Downloads\\chromedriver_win32\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\tkipkosgei\\Downloads\\chromedriver_win32\\chromedriver.exe");
 
         // create chrome driver instance
         WebDriver driver = new ChromeDriver();
@@ -20,7 +20,7 @@ public class AutomateFormsCleanUpPages {
         fillForm(driver);
         assertBannerAlert(driver);
 
-        assertEquals("The form was successfully submitted!",getAlertText(driver));
+        assertEquals("The form was successfully submitted!", getAlertText(driver));
 
         Thread.sleep(3000);
         driver.quit();

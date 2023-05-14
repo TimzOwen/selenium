@@ -7,9 +7,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.time.Duration;
 
 public class ImplicitWait {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         //set location for chrome driver
-        System.setProperty("webdriver.chrome.driver","C:\\Users\\tkipkosgei\\Downloads\\chromedriver_win32\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\tkipkosgei\\Downloads\\chromedriver_win32\\chromedriver.exe");
 
         // create chrome driver instance
         WebDriver driver = new ChromeDriver();
