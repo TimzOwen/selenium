@@ -5,7 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.util.Base64;
 
 public class LoginJaspty {
-    public static void main(String[] args) throws InterruptedException{
+    public static void main(String[] args) throws InterruptedException {
         //set location for chrome driver
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\tkipkosgei\\Downloads\\chromedriver_win32\\chromedriver.exe");
 
@@ -24,3 +24,14 @@ public class LoginJaspty {
         driver.quit();
     }
 }
+    
+//    String password = "Test!email30#password";
+//
+//    AES256TextEncryptor encryptor = new AES256TextEncryptor();
+//    encryptor.setPassword("some_salt");
+//    String myEncryptedText = encryptor.encrypt(password);
+//    System.out.println("Encrypted: "+myEncryptedText);
+//
+//    String plainText = encryptor.decrypt(myEncryptedText);
+//    System.out.println("Decrypted: "+plainText);
+//}
