@@ -25,13 +25,13 @@ public class LoginJaspty {
     }
 }
     
-//    String password = "Test!email30#password";
+//   String password = "Test!email30#password";
+
+//   AES256TextEncryptor encryptor = new AES256TextEncryptor();
+//   encryptor.setPassword("some_salt");
+//   String myEncryptedText = encryptor.encrypt(password);
+//   System.out.println("Encrypted: "+myEncryptedText);
 //
-//    AES256TextEncryptor encryptor = new AES256TextEncryptor();
-//    encryptor.setPassword("some_salt");
-//    String myEncryptedText = encryptor.encrypt(password);
-//    System.out.println("Encrypted: "+myEncryptedText);
-//
-//    String plainText = encryptor.decrypt(myEncryptedText);
-//    System.out.println("Decrypted: "+plainText);
-//}
+//   String plainText = encryptor.decrypt(myEncryptedText);
+//   System.out.println("Decrypted: "+plainText);
+
